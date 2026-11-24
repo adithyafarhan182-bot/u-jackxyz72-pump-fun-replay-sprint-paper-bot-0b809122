@@ -58,8 +58,8 @@ function priceGe(
   num: bigint,
   den: bigint,
 ): boolean {
-  // a/b >= (c/d) * (num/den)  <=>  a*d*num >= b*c*den
-  return aVs * bVt * num >= aVt * bVs * den;
+  // a/b >= (c/d) * (num/den)  <=>  a*d*den >= b*c*num
+  return aVs * bVt * den >= aVt * bVs * num;
 }
 
 function priceLe(
