@@ -16,8 +16,8 @@ Strategy (tuned on the kit's dev window with an offline replay backtest):
   sized to the harness cap (1% of real reserve per batch, max 0.4 SOL).
 - Exit everything on take-profit (2x average entry), stop-loss (0.5x entry),
   a wide trailing stop (55% of peak), or after 500 trades held.
-- Backtest on the dev window: net PnL +0.737 SOL, max drawdown 2.0%,
-  25 coins with round trips >= 0.01 SOL, 45 fills.
+- Grade-local on the dev window: net PnL +0.293 SOL, max drawdown 5.0%,
+  29 coins with round trips >= 0.01 SOL, 53 fills, win rate 34.5%.
 - Fully deterministic: no clock, no randomness, no network. Node 22 stdlib only.
 
 ## Run it
